@@ -7,13 +7,21 @@
     <title>Home </title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon1.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />  <title>Card Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+
     <!-- font-awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -44,14 +52,90 @@
     <!-- main -->
     <main class="page">
       <!-- header -->
-      <header class="hero">
-        <div class="hero-container">
-          <div class="hero-text">
-            <h1 style="font-family: 'Georgia', serif; font-weight: bold;">Wansee recipee</h1>
-            <h4 style="font-family: 'Georgia', serif; font-weight: bold;">Filipino Cuisines</h4>
+        <div class="container swiper">
+          <center><p class="welcometitle">Sarap in Every Bite! Try this Filipino Recipes to Satisfy Your Cravings</p></center>
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <a href="beefmushroom.html" class="card-link">
+                  <img src="assets/recipes/beefmushroom.avif" alt="Card Image" class="card-image">
+                  <p class="badge beef">Beef</p>
+                  <h2 class="card-title">Tender beef smothered in a rich, creamy mushroom sauce for a savory delight.</h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="porkribs.html" class="card-link">
+                  <img src="assets/recipes/porkribs.jpg" alt="Card Image" class="card-image">
+                  <p class="badge pork">Pork</p>
+                  <h2 class="card-title">Juicy spareribs slow-cooked in a smoky, tangy BBQ sauce for fall-off-the-bone goodness.</h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="chickengizzard.html" class="card-link">
+                  <img src="assets/recipes/chickengizzard.jpg" alt="Card Image" class="card-image">
+                  <p class="badge chicken">Chicken</p>
+                  <h2 class="card-title">Savory chicken gizzards simmered in rich, creamy coconut milk with a hint of spice.</h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="fishsinigang.html" class="card-link">
+                  <img src="assets/recipes/fishsinigang.jpg" alt="Card Image" class="card-image">
+                  <p class="badge fish">Fish</p>
+                  <h2 class="card-title">Tangy and comforting bangus soup simmered with fresh vegetables in a rich tamarind broth. </h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="beefampalaya.html" class="card-link">
+                  <img src="assets/recipes/ampalaya-con-carne.jpg" alt="Card Image" class="card-image">
+                  <p class="badge vegetable">Vegetable</p>
+                  <h2 class="card-title">Savory beef stir-fried with tender ampalaya in a flavorful, umami-rich sauce. </h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="beefballs.html" class="card-link">
+                  <img src="assets/recipes/beefballs.webp" alt="Card Image" class="card-image">
+                  <p class="badge snacks">Snacks</p>
+                  <h2 class="card-title">Crispy corned beef balls with a gooey, cheesy center for a deliciously savory bite.</h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="halohalo.html" class="card-link">
+                  <img src="assets/recipes/halohalo.jpg" alt="Card Image" class="card-image">
+                  <p class="badge dessert">Dessert</p>
+                  <h2 class="card-title">A refreshing mix of sweetened fruits, crushed ice, and creamy leche flan. </h2>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                  </button>
+                </a>
+              </li>
+            </ul>
+      
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
           </div>
         </div>
-      </header>
+      
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
       <!-- end of header -->
       <section class="recipes-container">
         <!-- tag container -->
