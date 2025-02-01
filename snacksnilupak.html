@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon1.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="Wansee recipee" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="tags.html" class="nav-link"> categories </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+          <a href="about.html" class="nav-link"> about us </a>
+
+
+          
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/snacksnilupak.webp"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Nilupak </h2>
+            <p>
+              Nilupak is a delicious Filipino treat made from cassava. This is enjoyed in the Philippines as a snack and it can also be considered as a dessert, sometimes. Other ingredients involved are grated or shredded coconut, condensed milk, and butter or margarine. There are other Nilupak versions that make use of saba banana.
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>10 mins</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>25 mins</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>4 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="snackstemplate.html">snacks</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                Combine the grated cassava, shredded coconut, condensed milk, salt, and butter. Mix well.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Place the mixture in a pan. Start to heat the pan and cook the mixture in low to medium heat for 20 to 25 minutes. Gradually stir the mixture while cooking.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Scoop part of a mixture and place it in a mold such as a ramekin or small bowl. Drop the molded mixture in a serving plate lined with cut banana leaves and shredded coconut.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+             <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 4</p>
+                <div></div>
+              </header>
+              <p>
+                Top with butter. Serve. Share and enjoy!
+              </p>
+            </div>
+            <!-- end of single instruction -->
+             
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">1 lb. grated cassava</p>
+              <p class="single-ingredient">1 cup shredded coconut</p>
+              <p class="single-ingredient">1 can 14 oz. condensed milk</p>
+              <p class="single-ingredient">3 tablespoons salted butter</p>
+              <p class="single-ingredient">1/4 teaspoon salt</p>
+              
+
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Pan</p>
+              <p class="single-tool">Mixing bowl </p>
+              <p class="single-tool">Spoons </p>
+              <p class="single-tool">Measuring cups and spoons </p>
+              <p class="single-tool">Banana Leaves </p>
+              
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">WanseeRecipes</span> Built by <span class="footer-logo">Team Wansee</span>
+
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
