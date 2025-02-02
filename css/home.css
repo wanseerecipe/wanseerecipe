@@ -32,9 +32,11 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 button:hover {
   background-color: #D1D1D1;
   color: #000;
+
 }
