@@ -116,21 +116,42 @@
 }
 
 .welcometitle{
-  font-family: Rubik Mono One, serif; 
-  font-weight: 100; 
+  font-family: "Oswald", serif; 
+  font-weight: bold; 
   font-style: normal; 
-  font-size: 30px; 
+  font-size: 40px; 
   margin-bottom: -20px;
 }
 @media (max-width: 425px) {
   .welcometitle {
-    font-size: 16px;
+    font-size: 30px;
     margin-top: 10px;
 
   }
 }
 @media (max-width: 375px), (max-width: 320px) {
   .welcometitle {
+    font-size: 16px;
+    margin-top: 10px;
+
+  }
+}
+.featuretitle{
+  font-family: "Oswald", serif; 
+  font-weight: bold; 
+  font-style: normal; 
+  font-size: 35px; 
+  margin-bottom: -20px;
+}
+@media (max-width: 425px) {
+  .featuretitle {
+    font-size: 35px;
+    margin-top: 10px;
+
+  }
+}
+@media (max-width: 375px), (max-width: 320px) {
+  .featuretitle {
     font-size: 16px;
     margin-top: 10px;
 

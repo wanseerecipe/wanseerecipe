@@ -136,7 +136,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: black;
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -147,7 +147,7 @@ ul {
   display: inline-block;
 }
 .btn:hover {
-  background: var(--primary-700);
+  background: black;
   box-shadow: var(--shadow-3);
 }
 .btn-hipster {
@@ -264,6 +264,8 @@ Navbar
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #000;
+
 }
 .nav-center {
   width: 90vw;
@@ -276,7 +278,8 @@ Navbar
   align-items: center;
 }
 .nav-header img {
-  width: 200px;
+  width: 230px;
+order: -1;
 }
 .nav-logo {
   display: flex;
@@ -305,7 +308,7 @@ Navbar
   text-align: center;
   font-size: 1.25rem;
   text-transform: capitalize;
-  color: var(--grey-900);
+  color: white;
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
   border-top: 1px solid var(--grey-500);
@@ -381,7 +384,7 @@ Footer
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--black);
+  background: black;
   color: var(--white);
 }
 .page-footer h5 {
