@@ -43,23 +43,23 @@
   border-radius: 50px;
 }
 .card-list .card-link .badge.beef{
-  color: green;
+  color: rgb(4, 0, 214);
   background: lightblue;
 }
 .card-list .card-link .badge.pork{
-  color: rgb(153, 0, 255);
+  color: rgb(4, 0, 214);
   background: lightblue;
 }
 .card-list .card-link .badge.chicken{
-  color: rgb(240, 116, 0);
+  color: rgb(4, 0, 214);
   background: lightblue;
 }
 .card-list .card-link .badge.fish{
-  color: rgb(247, 8, 255);
+  color: rgb(4, 0, 214);
   background: lightblue;
 }
 .card-list .card-link .badge.vegetable{
-  color: rgb(248, 0, 0);
+  color: rgb(4, 0, 214);
   background: lightblue;
 }
 .card-list .card-link .badge.snacks{
@@ -67,7 +67,7 @@
   background: lightblue;
 }
 .card-list .card-link .badge.dessert{
-  color: rgb(247, 8, 255);
+  color: rgb(4, 0, 214);
   background: lightblue;
 }
 .card-list .card-link .card-title{
