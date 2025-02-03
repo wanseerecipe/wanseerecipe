@@ -21,18 +21,86 @@
     <script src="js/bootstrap.min.js"></script>
 
     <style>
+      /* Base styles */
       .header-img {
         width: 100%;
-        height: 85vh; 
-        object-fit: cover; 
+        height: 85vh; /* Height adjusted to take up a significant portion */
+        object-fit: cover; /* Keeps the image proportional */
         display: block;
       }
 
+      /* Styling for the content area */
       .about-content {
         padding: 2rem;
         max-width: 800px;
         margin: 0 auto;
-        text-align: center; 
+        text-align: center; /* Centers the text */
+      }
+
+      /* Mobile styles (less than 600px) */
+      @media (max-width: 600px) {
+        .header-img {
+          height: 70vh; /* Reduce height for smaller screens */
+        }
+        
+        .about-content {
+          padding: 1rem; /* Less padding for smaller screens */
+        }
+
+        h2 {
+          font-size: 1.5rem; /* Adjust heading size */
+        }
+
+        h3 {
+          font-size: 1.2rem; /* Adjust heading size */
+        }
+
+        p {
+          font-size: 1rem; /* Adjust paragraph text size */
+        }
+      }
+
+      /* Tablet styles (between 600px and 900px) */
+      @media (max-width: 900px) {
+        .header-img {
+          height: 75vh; /* Slightly smaller image height */
+        }
+
+        .about-content {
+          padding: 1.5rem; /* Adjust padding for tablets */
+        }
+
+        h2 {
+          font-size: 1.75rem; /* Slightly larger heading */
+        }
+
+        h3 {
+          font-size: 1.3rem; /* Adjust heading size */
+        }
+
+        p {
+          font-size: 1.1rem; /* Adjust paragraph text size */
+        }
+      }
+
+      /* Larger screens (above 900px) */
+      @media (min-width: 900px) {
+        .about-content {
+          max-width: 1000px; /* Allow content to take up more space */
+          padding: 2rem; /* Padding for larger screens */
+        }
+
+        h2 {
+          font-size: 2rem; /* Larger headings */
+        }
+
+        h3 {
+          font-size: 1.5rem; /* Adjust heading size */
+        }
+
+        p {
+          font-size: 1.2rem; /* Larger paragraph text */
+        }
       }
     </style>
   </head>
@@ -60,7 +128,7 @@
 
     <!-- Full-width header image -->
     <section>
-      <img src="./assets/wanseegroup.png" class="header-img" alt="Wansee Team">
+      <img src="./assets/group-pic.jpg" class="header-img" alt="Wansee Team">
     </section>
 
     <!-- About Us Content -->
