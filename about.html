@@ -1,4 +1,3 @@
-<!-- About -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,22 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link href="js/bootstrap.min.js" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
-   <style>
+    <style>
+      /* Set the about-page container to be relatively positioned */
+      .about-page {
+        position: relative; /* This is important for absolute positioning of the image */
+        padding-right: 250px; /* Ensure space on the right for the image */
+      }
+
+      /* Image styling: position it at the top right */
+      .about-img {
+        position: absolute;
+        top: 20px; /* Adjust this value to move it further down or up */
+        right: 20px; /* Adjust this value to move it further left or right */
+        max-width: 250px; /* Optional: Limit the image size */
+        border-radius: 8px; /* Optional: Add rounded corners */
+      }
+
       /* Make the text scrollable */
       .about-text {
         max-height: 70vh; /* Limit the height for scroll */
@@ -29,7 +43,7 @@
     </style>
   </head>
   <body>
-    <!-- nav  -->
+    <!-- nav -->
     <nav class="navbar">
       <div class="nav-center">
         <div class="nav-header">
@@ -48,28 +62,38 @@
         </div>
       </div>
     </nav>
-
     <!-- end of nav -->
     <main class="page">
       <section class="about-page">
-        <article>
+        <!-- Image at the top-right -->
+        <img
+          src="assets/group pic.jpg"
+          class="about-img"
+          alt="Wansee Team"
+        />
+        <div class="about-text">
           <h2>We are Team Wansee</h2>
           <p>
             Welcome to our Filipino Cuisine website, where the rich and diverse flavors of the Philippines come to life in every dish! 
             From classic comfort foods like Sinigang and Adobo to sweet treats like Halo-Halo and Leche Flan, our easy-to-follow recipes 
-            will help you recreate authentic Filipino meals right in your kitchen. Whether you're cooking for family or hosting a gathering, 
-            our step-by-step instructions and cooking tips ensure your Filipino feast is full of flavor and tradition. 
+            will help you recreate authentic Filipino meals right in your kitchen. 
           </p>
           <p>
-            Explore the heart of 
-            Filipino cuisine today and bring the taste of the islands to your table!
+            Explore the heart of Filipino cuisine today and bring the taste of the islands to your table!
           </p>
-        </article>
-        <img
-          src="assets/group pic.jpg"
-          class="img about-img"
-          alt="Wansee Team"
-        />
+
+          <h3>About Wansee Inc.</h3>
+          <p>
+            At Wansee Inc., we believe that great web design is more than just aesthetics—it's about creating seamless digital experiences that are both beautiful and functional.
+            Specializing in clean, modern, and user-friendly websites, we help businesses and individuals establish a strong online presence that truly reflects their vision.
+          </p>
+          <p>
+            📧 Email: teamwansee@gmail.com <br>
+            🌐 Website: www.teamwansee.com <br>
+            📞 Phone: 1234-0987-65 <br>
+            📍 Address: Manila, Philippines
+          </p>
+        </div>
       </section>
     </main>
     <!-- footer -->
@@ -81,3 +105,4 @@
     </footer>
     <script src="./js/app.js"></script>
   </body>
+</html>
