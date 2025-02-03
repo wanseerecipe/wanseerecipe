@@ -22,82 +22,86 @@
 
     <style>
       /* Base styles */
-      .header-img {
-        width: 100%;
-        height: 85vh;
-        object-fit: cover; 
-        display: block;
-      }
+.header-img {
+  width: 100%;               /* Ensures the image stretches across the entire width */
+  height: 85vh;              /* Makes the image height take up 85% of the viewport height */
+  object-fit: contain;       /* Ensures the entire image fits without cropping */
+  display: block;
+}
 
-      .about-content {
-        padding: 2rem;
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center; 
-      }
+/* Styling for the content area */
+.about-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; /* Centers the text */
+}
 
-      @media (max-width: 600px) {
-        .header-img {
-          height: 70vh; 
-        }
-        
-        .about-content {
-          padding: 1rem; 
-        }
+/* Mobile styles (less than 600px) */
+@media (max-width: 600px) {
+  .header-img {
+    height: 70vh; /* Reduce height for smaller screens */
+  }
+  
+  .about-content {
+    padding: 1rem; /* Less padding for smaller screens */
+  }
 
-        h2 {
-          font-size: 1.5rem; 
-        }
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
 
-        h3 {
-          font-size: 1.2rem; 
-        }
+  h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
 
-        p {
-          font-size: 1rem; 
-        }
-      }
+  p {
+    font-size: 1rem; /* Adjust paragraph text size */
+  }
+}
 
-      @media (max-width: 900px) {
-        .header-img {
-          height: 75vh; 
-        }
+/* Tablet styles (between 600px and 900px) */
+@media (max-width: 900px) {
+  .header-img {
+    height: 75vh; /* Slightly smaller image height */
+  }
 
-        .about-content {
-          padding: 1.5rem; 
-        }
+  .about-content {
+    padding: 1.5rem; /* Adjust padding for tablets */
+  }
 
-        h2 {
-          font-size: 1.75rem;
-        }
+  h2 {
+    font-size: 1.75rem; /* Slightly larger heading */
+  }
 
-        h3 {
-          font-size: 1.3rem; 
-        }
+  h3 {
+    font-size: 1.3rem; /* Adjust heading size */
+  }
 
-        p {
-          font-size: 1.1rem; 
-        }
-      }
+  p {
+    font-size: 1.1rem; /* Adjust paragraph text size */
+  }
+}
 
-      @media (min-width: 900px) {
-        .about-content {
-          max-width: 1000px; 
-          padding: 2rem; 
-        }
+/* Larger screens (above 900px) */
+@media (min-width: 900px) {
+  .about-content {
+    max-width: 1000px; /* Allow content to take up more space */
+    padding: 2rem; /* Padding for larger screens */
+  }
 
-        h2 {
-          font-size: 2rem; 
-        }
+  h2 {
+    font-size: 2rem; /* Larger headings */
+  }
 
-        h3 {
-          font-size: 1.5rem; 
-        }
+  h3 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
 
-        p {
-          font-size: 1.2rem; 
-        }
-      }
+  p {
+    font-size: 1.2rem; /* Larger paragraph text */
+  }
+}
     </style>
   </head>
   <body>
